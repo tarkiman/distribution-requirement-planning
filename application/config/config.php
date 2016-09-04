@@ -17,8 +17,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | environments.
 |
 */
-$config['base_url'] = 'http://localhost/distribution_requirement_planning/';
-//$config['base_url'] = 'http://192.168.210.1/ci_tarkiman/';
+$config['base_url'] = "http://" . $_SERVER['HTTP_HOST'];
+//$config['base_url'] .= preg_replace('@/+$@', '', dirname($_SERVER['SCRIPT_NAME'])) . '/';
 
 /*
 |--------------------------------------------------------------------------
